@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = 'stylesheet' href = "/static/style.css" type = "text/css">
+</head>
+<body>
+<script>
+<!-- alert("Welcome")-->
+function alertText(){
+    alert("Please wait while we download the images for you")
+    }
+</script>
+<div class = 'btn-group'></div>
+
+<form action = "/searchImages" method = "POST">
+    <div class = 'user-input'>
+        <div class = "login-screen">
+            <div class = "app-title">
+                <h1>Download Images from Web</h1>
+            </div>
+            <div class = "login-form">
+                <div class = "control-group">
+                    <input style = "width:800px" type = "text" class = "login-field" required=""
+                           placeholder="Enter Keyword" name="keyword" >
+                    <input type = "submit" value="Submit" onclick="alertText()" class="btn btn-primary btn-large btn-block">
+                 </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+</body>
+</html>

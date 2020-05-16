@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrapped Images</title>
+</head>
+<body>
+<div class = "table-users">
+    <div class="header">Some of the Scrapped images:</div>
+    <table>
+        {% for show_image in show_images %}
+        <td width="400">
+            <img width ="300" height="300" src="{{url_for('static', filename=show_image)}}"
+                 alt = "Show Image"></td>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
